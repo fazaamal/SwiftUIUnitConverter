@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var units = ["celcius", "farenheit", "kelvin"]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            Form {
+                Section ("Select your units") {
+                    
+                }
+            }.navigationTitle("Unit Converter")
         }
-        .padding()
     }
 }
 
